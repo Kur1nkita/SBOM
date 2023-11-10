@@ -7,3 +7,4 @@ Example: python3 main.py /home/alice/code/repos/
 
 ## Assumptions:
 - The SBOM files is created and saved in the root directory "The directory path that was written in when launching the script". Although it is not hard to change it to SBOM for every repository with the way the coding is structured.
+- The devDependencies is also added into the SBOM

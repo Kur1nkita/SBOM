@@ -68,7 +68,6 @@ def import_dependencies(file_paths: list) -> list:
                     line = line.split("==")
                     dependencies.append((line[0], line[1].strip(), type_temp, file_path))
             else:
-                # I am assuming that devDependencies is also needed in a SBOM.
                 data = json.load(f)
                 for name, version in data["dependencies"].items():
                     dependencies.append((name, version, type_temp, file_path))
