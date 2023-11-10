@@ -2,6 +2,7 @@
 - Run main.py in CMD and add the path at the end.
 
 Example: python3 main.py /home/alice/code/repos/ or /users/bob/code/repos
+
 With or without "/" at the end, it will still work.
 
 - This script only needs main.py and nothing else.
