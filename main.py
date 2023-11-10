@@ -83,6 +83,9 @@ def main():
     main_path = sys.argv[1]
     if main_path[-1] == "/":
         main_path = main_path[:-1]
+
+    # StopIteration is a cause of the path not existing, so this try-except will catch that,
+    # when trying to get all the subdirectories.
     try:
         subdirectories = get_all_subdirectories(main_path)
     except StopIteration:
@@ -93,6 +96,7 @@ def main():
         print(f'No repositories to be found')
         sys.exit()
 
+    # Gets all the requirements.txt and package.json, and stores it in files as a list.
     files = []
     for x in subdirectories:
         files.extend(get_files(x))
