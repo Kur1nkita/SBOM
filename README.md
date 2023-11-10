@@ -1,7 +1,7 @@
 ## How to run the SBOM script:
 - Run main.py in CMD and add the path at the end.
 
-Example: python3 main.py /home/alice/code/repos/ or /users/bob/code/repos
+Example: "python3 main.py /home/alice/code/repos/" or "python3 main.py /users/bob/code/repos"
 
 With or without "/" at the end, it will still work.
 
